@@ -16,17 +16,17 @@ const track3 = new Audio('./assets/sounds/track3.mp3');
 // }
 
 window.addEventListener("load", () => {
-    track1.addEventListener('ended', function () {
+    track1.addEventListener('ended', function() {
         console.log('Audio1 finished playing');
         track_fin = 1;
         arrow.style.display = "block";
     });
-    track2.addEventListener('ended', function () {
+    track2.addEventListener('ended', function() {
         console.log('Audio2 finished playing');
         track_fin = 2;
         arrow.style.display = "block";
     });
-    track3.addEventListener('ended', function () {
+    track3.addEventListener('ended', function() {
         console.log('Audio3 finished playing');
         track_fin = 3;
         replay.style.display = "block";
@@ -54,8 +54,7 @@ window.addEventListener("load", () => {
             track1.pause();
             track2.play();
             arrow.style.display = "none";
-        }
-        else if (count == 1 && track_fin == 2) {
+        } else if (count == 1 && track_fin == 2) {
             s2.style.display = "none";
             s1.style.display = "none";
             s3.style.display = "block";
@@ -83,7 +82,3 @@ window.addEventListener("load", () => {
 
 
 });
-
-
-
-
