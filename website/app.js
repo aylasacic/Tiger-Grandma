@@ -38,6 +38,8 @@ window.addEventListener("load", () => {
 
     play.addEventListener("click", () => {
         play.style.display = "none";
+        cover.style.display = "none";
+        s1.style.display = "block";
         track1.play();
     });
 
@@ -67,8 +69,9 @@ window.addEventListener("load", () => {
 
     replay.addEventListener("click", () => {
         s3.style.display = "none";
-        s1.style.display = "block";
+        s1.style.display = "none";
         replay.style.display = "none";
+        cover.style.display = "block";
         navbar.style.display = "none";
         play.style.display = "block";
         count = 0;
